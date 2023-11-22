@@ -67,7 +67,6 @@ const Home = () =>{
       </Slider>
       </div>
         </div>
-
         <div class = "sale-carousel">
             <div class = "wlabel">
                 <h6 class = "c-subtitle">Women's</h6>
