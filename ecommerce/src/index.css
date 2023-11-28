@@ -101,7 +101,8 @@ ul{
  }
 
  .sale-carousel{
-  padding:5%;
+  padding: 5%;
+  margin: 10%;
   display: flex;
   justify-content: center;
   background-image: none;
@@ -149,7 +150,7 @@ ul{
   margin: 0%;
   padding: 0%;
   background-image: none;
-  background-color: #000000;
+  background-color: #ffffff;
  }
 
  .prod-details,b,p,h4{
@@ -162,13 +163,40 @@ ul{
   padding: 10px;
  }
 
-.booking{
-  color:white;
- background-color: transparent;
- background-image: none;
- font-size: 450%;
- height:100px;
- position: relative;
+ .footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e3e3e;
+  background-image: none;
+  height: 300px;
+ }
+
+ .copy{
+  background-color: #3e3e3e;
+  color: #ffffff;
+  background-image: none;
+ }
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #000000;
+  background-image: none;
+  padding: 10%;
+  margin: 10%;
+}
+
+.about-h3{
+  padding-top: 3%;
+}
+
+.about-desc, .about-h1, .about-h3{
+  background-color: transparent;
+  background-image: none;
+  color: #ffffff;
 }
 
 .hamburger{

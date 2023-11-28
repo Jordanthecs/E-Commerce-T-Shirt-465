@@ -18,6 +18,7 @@ const Home = () =>{
             <h1 class = "welcome" >Welcome To</h1>
             <h1 class = "welcome2">Computer Code Wars</h1>
         </div>
+        <div class = "whole-carousel">
         <div class = "sale-carousel">
             <div class = "wlabel">
                 <h6 class = "c-subtitle">Men's</h6>
@@ -77,7 +78,7 @@ const Home = () =>{
       <div>
         <div className="product-card">
           <div className="product-image">
-            <img className="prod-img" src="code-shirt.jpeg" alt="Shirt" />
+            <img className="prod-img" src="women-code-shirt.png" alt="Shirt" />
           </div>
           <div className="prod-details">
             <h4>Shirt</h4>
@@ -90,7 +91,7 @@ const Home = () =>{
       <div>
         <div className="product-card">
           <div className="product-image">
-            <img className="prod-img" src="code2-shirts.jpeg" alt="Shirt" />
+            <img className="prod-img" src="women-code-shirt2.jpg" alt="Shirt" />
           </div>
           <div className="prod-details">
             <h4>Shirt</h4>
@@ -103,7 +104,7 @@ const Home = () =>{
       <div>
         <div className="product-card">
           <div className="product-image">
-            <img className="prod-img" src="code3-shirts.jpeg" alt="Shirt" />
+            <img className="prod-img" src="women-code-shirt3.png" alt="Shirt" />
           </div>
           <div className="prod-details">
             <h4>Shirt</h4>
@@ -115,6 +116,15 @@ const Home = () =>{
       </div>
       </Slider>
       </div>
+        </div>
+        </div>  
+        <div class = "footer">
+        <footer>
+          <div>
+            {/* Footer content goes here */}
+            <p class = "copy">&copy; 2023 Your Website. All Rights Reserved.</p>
+          </div>
+    </footer>
         </div>
     </body>
   );
