@@ -100,31 +100,103 @@ ul{
   position:absolute;
  }
 
-.womens-sale{
-  background-color: #1a1a1a;
-  width: 100%;
+ .sale-carousel{
+  padding: 5%;
+  margin: 10%;
+  display: flex;
+  justify-content: center;
+  background-image: none;
+  background-color: transparent;
   height: 500px;
-  border: 10px solid #ffffff;
-  display: inline-flex;
-  flex-wrap: wrap;
-}
+ }
 
-.box{
+ .product-card{
+  width: 1100px;
+  border: #ffffff solid 5px;
+ }
+
+ .wlabel{
+  background-image: none;
+  background-color: #2f2f2f;
+  height: 80px;
+  width: 150px;
+ }
+
+ .c-subtitle{
+  display: flex;
+  justify-content: center;
+  background-image: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 200%;
+ }
+
+ .c-heading{
+  display: flex;
+  justify-content: center;
+  background-image: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 150%;
+ }
+
+ .product-image{
+  background-image: none;
+  background-color: #000000;
+ }
+
+ .prod-img{
+  height: 10cm;
+  margin: 0%;
+  padding: 0%;
+  background-image: none;
+  background-color: #ffffff;
+ }
+
+ .prod-details,b,p,h4{
+  background-image: none;
+  background-color: #000000;
+  color: #ffffff;
+ }
+
+ .prod-details{
+  padding: 10px;
+ }
+
+ .footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e3e3e;
+  background-image: none;
+  height: 300px;
+ }
+
+ .copy{
+  background-color: #3e3e3e;
+  color: #ffffff;
+  background-image: none;
+ }
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   background-color: #000000;
   background-image: none;
-  justify-content: space-between;
-  width: 25%;
-  border: 5px solid #ffffff;
-  padding: 3px;
+  padding: 10%;
+  margin: 10%;
 }
 
-.booking{
-  color:white;
- background-color: transparent;
- background-image: none;
- font-size: 450%;
- height:100px;
- position: relative;
+.about-h3{
+  padding-top: 3%;
+}
+
+.about-desc, .about-h1, .about-h3{
+  background-color: transparent;
+  background-image: none;
+  color: #ffffff;
 }
 
 .hamburger{
