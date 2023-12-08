@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 
-const Product = ({ name, description, price, imageUrl, addToCart }) => {
+const Product = ({ name, description, price, imageUrl, addToCart, cartItems }) => {
 
     const handleClick = () => {
-        addToCart({ name, price });
+        addToCart({ name, description, price });
+        console.log(cartItems);
     };
   
     return (
@@ -13,7 +14,7 @@ const Product = ({ name, description, price, imageUrl, addToCart }) => {
         <h3>{name}</h3>
         <p>{description}</p>
         <p>${price}</p>
-        <button onClick={handleClick}>Add to Cart</button>
+        <button class = "addToCart" onClick={handleClick}>Add to Cart</button>
       </div>
     </div>
   );

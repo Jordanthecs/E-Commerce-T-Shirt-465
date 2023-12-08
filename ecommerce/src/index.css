@@ -56,11 +56,119 @@ ul{
 .cart-container{
   background-color: #000000;
   background-image: none;
-  margin-right: 10%;
+}
+
+.login-container{
+  background-color: transparent;
+  background-image: none;
+  margin-right: 5%;
+  margin: 2%;
+}
+
+.login-link{
+  background-color: transparent;
+  background-image: none;
+}
+
+.login{
+  height: 50px;
+  background-color: white;
+  background-image: none;
+  border-radius: 10px;
+}
+
+.login:hover{
+  background-color: #9166ff;
+}
+
+.login-card{
+  background-color: #000000;
+  background-image: none;
+  height: 700px;
+}
+
+form{
+  padding: 6%;
+}
+
+.email, .password, .name, form{
+  background-color: #000000;
+  background-image: none;
+}
+
+.h2-login{
+  background-color: #000000;
+  background-image: none;
+  color: #ffffff; 
+  display: flex;
+  justify-content: center;
+  height:50px;
+}
+
+.signup{
+  height: 50px;
+  background-color: white;
+  background-image: none;
+  border-radius: 10px;
+}
+
+.signup:hover{
+  background-color: #9166ff;
+}
+
+.email, .name, .password{
+  height: 75px;
+}
+
+.email-field, .pass-field, .name-field{
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  background-image: none;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+}
+
+.pass-label, .email-label, .name-label{
+  background-color: #000000;
+  background-image: none;
+  color: #ffffff;
+  font-size: 120%;
+}
+
+.submit-button{
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  background-image: none;
+}
+
+.login-button:hover{
+  background-color: #1a0038;
+}
+
+.login-button{
+  background-color: #9166ff;
+  color: #ffffff;
+  background-image: none;
+  width: 100px;
+  height: 34px;
+  border-radius: 10px;
+}
+
+.login-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 200;
+  margin: 15%;
 }
 
 .shopping-cart{
-  height: 90px;
+  height: 50px;
   background-image: none;
   background-color: #000000;
   text-decoration: none;
@@ -402,6 +510,38 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.Total-Calc, .co-p{
+  background-color: #ffffff;
+  color: #000000;
+  background-image: none;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  background-image: none;
+}
+
+.co-p{
+  display: flex;
+  justify-content: center;
+}
+
+.checkout{
+  background-color: #4CAF50;
+  background-image: none;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout:hover{
+  background-color: #45a049;
 }
 
 .hamburger .bar{

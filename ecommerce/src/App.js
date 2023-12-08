@@ -7,16 +7,14 @@ import Home from './pages/home';
 import Cart from './pages/cart';
 import About from './pages/about';
 import Shop from './pages/shop';
+import Login from './pages/login';
+import Signup from './pages/signup';
 import React, { useState } from 'react';
+import { CartProvider } from './CartContext';
 
 function App() {
-  const [cartItems, setCartItems] = useState([]);
-
-  const addToCart = (product) => {
-    const updatedCart = [...cartItems, product];
-    setCartItems(updatedCart);
-  };
   return (
+    <CartProvider>
     <div className="App">
       <Navbar />
         <Routes>
@@ -25,8 +23,11 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
     </div>
+    </CartProvider>
   );
 }
 
