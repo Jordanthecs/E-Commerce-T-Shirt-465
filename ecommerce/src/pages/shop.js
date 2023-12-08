@@ -1,7 +1,15 @@
 import React, {useState} from 'react';
+import { useContext } from 'react';
 import Product from './product'; // Import the Product component
+import { CartContext } from '../CartContext';
 
 const Shop = () => {
+  const { cartItems, setCartItems } = useContext(CartContext);
+
+  const addToCart = (product) => {
+    setCartItems([...cartItems, product]);
+  };
+
   // Sample product data (replace this with your actual product data)
   const products = [
     {
@@ -75,6 +83,8 @@ const Shop = () => {
               description={product.description}
               price={product.price}
               imageUrl={product.imageUrl}
+              addToCart={addToCart}
+              cartItems={cartItems}
             />
           ))}
         </div>
