@@ -91,7 +91,7 @@ form{
   padding: 6%;
 }
 
-.email, .password, .name, form{
+.email, .password, .name, .card, .address, form{
   background-color: #000000;
   background-image: none;
 }
@@ -116,11 +116,11 @@ form{
   background-color: #9166ff;
 }
 
-.email, .name, .password{
+.email, .name, .password, .card, .address{
   height: 75px;
 }
 
-.email-field, .pass-field, .name-field{
+.email-field, .pass-field, .name-field, .card-field, .address-field{
   width: 100%;
   height: 40px;
   background-color: #ffffff;
@@ -131,7 +131,7 @@ form{
   text-align: center;
 }
 
-.pass-label, .email-label, .name-label{
+.pass-label, .email-label, .name-label, .card-label, .address-label{
   background-color: #000000;
   background-image: none;
   color: #ffffff;
@@ -400,9 +400,6 @@ form{
   
 }
 
-/* styles.css */
-
-/* Product Card Styles */
 .shop-product-card {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -542,138 +539,4 @@ form{
 
 .checkout:hover{
   background-color: #45a049;
-}
-
-.hamburger .bar{
-  height: 10px;
-  width: 100%;
-  background-color: #ffffff;
-  background-image: none;
-  border-radius: 10px;
-}
-
-.homepage{
-  display: flex;
-  justify-content: center;
-}
-
-.introduction{
-  height: 1000px;
-  width: 70%;
-  margin-top: 5%;
-  background-color: #1a1a1a;
-  border-radius: 10%;
-  display: flex;
-  align-items: center;
-  border: 10px solid #ffffff;
-}
-
-.bio-pic{
-  height: 700px;
-  border-radius: 20px;
-  margin-left: 5%;
-  border: 10px solid #ac6ebe;
-}
-
-.bio-paragraph{
-  color: #000000;
-  background-color: #ffffff;
-  background-image: none;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 5px;
-  font-size: 50px;
-  border-radius: 20px;
-  border: 10px solid #ac6ebe;
-}
-
-.work{
-  display: flex;
-  justify-content: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.showcase{
-  background-color: #1a1a1a;
-  width: 50%;
-  height: 1000px;
-  border: 10px solid #ffffff;
-  border-radius: 20px;
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-
-.photo-container{
-  background-color: #000000;
-  justify-content: space-between;
-  width: 25%;
-  border: 5px solid #ffffff;
-  padding: 3px;
-}
-
-@media only screen and (max-width:800px){
-  .navbar{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  .shopping-cart{
-      display: none;
-  }
-  .ul{
-      display: none;
-  }
-  .logo{
-      height: 75px;
-      transform: translate(0,30px);
-  }
-  .welcome{
-      display: block;
-      background-color: transparent;
-      background-image: none;
-      font-size: 300%;
-      height:450px;
-      position:absolute;
-      justify-content: center;
-  }
-  .booking{
-      font-size: 350%;
-  }
-  .hamburger{
-      display: flex;
-      top:70px;
-  }
-  .link-list{
-      display: none;
-      height: 70px;
-  }
-  .link-list:hover{
-      background-color: transparent;
-  }
-
-  .link-container ul{
-      flex-direction: column;
-      width: 100%;
-  }
-  
-  .link-container .link-list{
-      display: flex;
-      justify-content: center;
-  }
-  
-  .link-container{
-      background-color: #000000;
-      background-image: none;
-      width: 100%;
-      text-align: center;
-      padding-bottom: 15px;
-  }
-
-  .link-container.active{
-      display: none;
-  }
 }
