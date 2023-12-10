@@ -1,13 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../CartContext';
 import { firestore } from '../firebase';
 import { addDoc, collection } from '@firebase/firestore';
 
 const Cart = () => {
   const { cartItems } = useContext(CartContext);
+  const [total, setTotal] = useState(0);
 
-  const [total, setTotal] = useState(0); // Initialize total as 0 initially
+  const navigate = useNavigate();
 
   const ref = collection(firestore, 'Orders');
 
@@ -32,6 +34,7 @@ const Cart = () => {
 
     try {
       addDoc(ref, data);
+      navigate(`/checkout?total=${total}`);
     } catch (e) {
       console.log(e);
     }

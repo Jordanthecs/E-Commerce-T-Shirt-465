@@ -11,7 +11,6 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
     try {
       const usersRef = collection(firestore, 'Users');
       const q = query(usersRef, where('email', '==', email), where('password', '==', password));
@@ -20,7 +19,7 @@ const Login = () => {
       if (!querySnapshot.empty) {
         querySnapshot.forEach((doc) => {
           console.log('Document data:', doc.data());
-          navigate.push('/shop');
+          navigate('/shop');
         });
       } else {
         setErrorMessage('Invalid email or password'); // Set error message for invalid credentials

@@ -9,6 +9,7 @@ import About from './pages/about';
 import Shop from './pages/shop';
 import Login from './pages/login';
 import Signup from './pages/signup';
+import Checkout from './pages/checkout';
 import React, { useState } from 'react';
 import { CartProvider } from './CartContext';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
     </div>
     </CartProvider>
